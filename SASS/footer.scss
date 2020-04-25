@@ -1,0 +1,70 @@
+footer{
+    margin: 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: $secondary;
+    h1{
+        color: $font-dark;
+        font-size: 48px;
+        font-family: 'Orbitron', sans-serif;
+        margin: 10%;
+    }
+    .container{
+        width: 50vw;
+        a{
+            text-decoration: none;
+            color: $font-dark;
+            :hover{
+                transition:all ease-in-out 0.3s;
+                cursor: pointer;
+                text-decoration: none;
+                color: black;
+            }
+            .row{
+                margin-bottom: 30px;
+                span{
+                    font-size: 24px;
+                }
+                .round-profile{
+                    border-radius: 50%;
+                    width: 45px;
+                    height: 45px;
+                    background: url('../IMG/luja.jpg') no-repeat;
+                    background-size: cover;
+                }
+                .logo{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+                }
+                .logo-fb{
+                    background: url('../IMG/fb.png') no-repeat;
+                    background-size: cover;
+
+                }
+                .logo-yt{
+                    background: url('../IMG/youtube.png') no-repeat;
+                    background-size: cover;
+                }
+                .logo-twitter{
+                    background: url('../IMG/twitter.png') no-repeat;
+                    background-size: cover;
+                }
+                .logo-mail{
+                    background: url('../IMG/mail.png') no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+                .logo-insta{
+                    background: url('../IMG/insta.png') no-repeat;
+                    background-size: cover;
+                }
+                .logo-git{
+                    background: url('../IMG/git.png') no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+}

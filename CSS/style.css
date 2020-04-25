@@ -19,30 +19,15 @@
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1;
   width: 100vw;
   height: 100vh;
   background-color: black;
   opacity: 0.5;
 }
 
-.join {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 200;
-  width: 100vw;
-  height: 100vh;
-  visibility: hidden;
-  transition: all ease-in-out 0.5s;
-  color: white;
-}
-.join :hover {
-  visibility: visible;
-}
-
 .intro {
-  z-index: 15;
+  z-index: 2;
   position: absolute;
   top: 20%;
   left: 10%;
@@ -52,8 +37,7 @@
 .intro .logo {
   width: 100px;
   height: 100px;
-  position: absolute;
-  top: 5%;
+  position: relative;
 }
 .intro .logo img {
   width: 100%;
@@ -177,7 +161,7 @@
 
 .showcase {
   width: 100%;
-  height: 300vh;
+  height: auto;
   margin: 0;
   padding: 0;
 }
@@ -242,16 +226,85 @@
   -moz-box-shadow: 13px 9px 24px 2px #242424;
   box-shadow: 13px 9px 24px 2px #242424;
 }
-.showcase .showcase-wrapper .events {
-  display: flex;
-  flex-grow: 1;
-  height: 100vh;
-  justify-content: center;
-  align-items: space-around;
-  background: #a0ddff;
+.showcase .showcase-wrapper .github .project img {
+  width: 35vw;
+  height: auto;
+  padding: 0;
 }
-.showcase .showcase-wrapper .events h1 {
-  margin-top: 10%;
+.showcase .showcase-wrapper .github .project .description {
+  padding: 2rem;
+  flex-grow: 1;
+  font-size: 20px;
+}
+
+footer {
+  margin: 0;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color: #3772ff;
+}
+footer h1 {
+  color: #fcfcfc;
+  font-size: 48px;
+  font-family: "Orbitron", sans-serif;
+  margin: 10%;
+}
+footer .container {
+  width: 50vw;
+}
+footer .container a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+footer .container a :hover {
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+}
+footer .container a .row {
+  margin-bottom: 30px;
+}
+footer .container a .row span {
+  font-size: 24px;
+}
+footer .container a .row .round-profile {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background: url("../IMG/luja.jpg") no-repeat;
+  background-size: cover;
+}
+footer .container a .row .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+footer .container a .row .logo-fb {
+  background: url("../IMG/fb.png") no-repeat;
+  background-size: cover;
+}
+footer .container a .row .logo-yt {
+  background: url("../IMG/youtube.png") no-repeat;
+  background-size: cover;
+}
+footer .container a .row .logo-twitter {
+  background: url("../IMG/twitter.png") no-repeat;
+  background-size: cover;
+}
+footer .container a .row .logo-mail {
+  background: url("../IMG/mail.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+footer .container a .row .logo-insta {
+  background: url("../IMG/insta.png") no-repeat;
+  background-size: cover;
+}
+footer .container a .row .logo-git {
+  background: url("../IMG/git.png") no-repeat;
+  background-size: cover;
 }
 
 html {
