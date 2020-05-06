@@ -37,8 +37,7 @@
         position: relative;
         img{
             width: 100%;
-            height: 100%;
-            border-radius: 50%;
+            height: auto;
         }
     }
     h1{
@@ -53,110 +52,128 @@
     }
 }
 
-
-.menu{
-    width: 100%;
-    height: 100vh;
-    color: $secondary-dark;
-    .main-menu{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: wrap row;
-        .tutorials{
-            flex-grow: 1;
-            width: 60%;
-            height: 50vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background:url('../IMG/tutorial.jpg') no-repeat;
-            background-size: cover;
-            backdrop-filter: brightness(20%);
-            transition: ease-in-out 0.3s;
-            span{
-                display: none;
-                font-family: 'Audiowide', cursive;
-                font-size: 4rem;
-            }
-            &:hover{
-                opacity: 0.5;
-                span{
-                    display: inline;
-                }
-            }
-        }
-        .projects{
-            flex-grow: 1;
-            width: 40%;
-            height: 50vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background:url('../IMG/project.jpg') no-repeat;
-            background-size: cover;
-            backdrop-filter: brightness(20%);
-            transition: ease-in-out 0.3s;
-            span{
-                display: none;
-                font-family: 'Audiowide', cursive;
-                font-size: 4rem;
-            }
-            &:hover{
-                opacity: 0.5;
-                span{
-                    display: inline;
-                }
-            }
-        }
-        .team{
-            flex-grow: 1;
-            width: 45%;
-            height: 50vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background:url('../IMG/team.jpg') no-repeat;
-            backdrop-filter: brightness(20%);
-            background-size: cover;
-            transition: ease-in-out 0.3s;
-            span{
-                display: none;
-                font-family: 'Audiowide', cursive;
-                font-size: 4rem;
-            }
-            &:hover{
-                opacity: 0.5;
-                span{
-                    display: inline;
-                }
-            }
-        }
-        .contact{
-            flex-grow: 1;
-            height: 50vh;
-            width: 55%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background:url('../IMG/contact.jpg') no-repeat;
-            background-size: cover;
-            backdrop-filter: brightness(20%);
-            transition: ease-in-out 0.3s;
-            span{
-                display: none;
-                font-family: 'Audiowide', cursive;
-                font-size: 4rem;
-            }
-            &:hover{
-                opacity: 0.5;
-                span{
-                    display: inline;
-                }
-            }
+.newsletter{
+    height: 80vh;
+    padding: 10%;
+    background: url('../IMG/team.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    color: white;
+    color-interpolation-filters: sRGB;
+    .content-news{
+        h2{
+            font-size: 72px;
+            color: $secondary;
         }
     }
+
 }
+
+
+// .menu{
+//     width: 100%;
+//     height: 100vh;
+//     color: $secondary-dark;
+//     .main-menu{
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         flex-flow: wrap row;
+//         .tutorials{
+//             flex-grow: 1;
+//             width: 60%;
+//             height: 50vh;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             background:url('../IMG/tutorial.jpg') no-repeat;
+//             background-size: cover;
+//             backdrop-filter: brightness(20%);
+//             transition: ease-in-out 0.3s;
+//             span{
+//                 display: none;
+//                 font-family: 'Audiowide', cursive;
+//                 font-size: 4rem;
+//             }
+//             &:hover{
+//                 opacity: 0.5;
+//                 span{
+//                     display: inline;
+//                 }
+//             }
+//         }
+//         .projects{
+//             flex-grow: 1;
+//             width: 40%;
+//             height: 50vh;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             background:url('../IMG/project.jpg') no-repeat;
+//             background-size: cover;
+//             backdrop-filter: brightness(20%);
+//             transition: ease-in-out 0.3s;
+//             span{
+//                 display: none;
+//                 font-family: 'Audiowide', cursive;
+//                 font-size: 4rem;
+//             }
+//             &:hover{
+//                 opacity: 0.5;
+//                 span{
+//                     display: inline;
+//                 }
+//             }
+//         }
+//         .team{
+//             flex-grow: 1;
+//             width: 45%;
+//             height: 50vh;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             background:url('../IMG/team.jpg') no-repeat;
+//             backdrop-filter: brightness(20%);
+//             background-size: cover;
+//             transition: ease-in-out 0.3s;
+//             span{
+//                 display: none;
+//                 font-family: 'Audiowide', cursive;
+//                 font-size: 4rem;
+//             }
+//             &:hover{
+//                 opacity: 0.5;
+//                 span{
+//                     display: inline;
+//                 }
+//             }
+//         }
+//         .contact{
+//             flex-grow: 1;
+//             height: 50vh;
+//             width: 55%;
+//             display: flex;
+//             justify-content: center;
+//             align-items: center;
+//             background:url('../IMG/contact.jpg') no-repeat;
+//             background-size: cover;
+//             backdrop-filter: brightness(20%);
+//             transition: ease-in-out 0.3s;
+//             span{
+//                 display: none;
+//                 font-family: 'Audiowide', cursive;
+//                 font-size: 4rem;
+//             }
+//             &:hover{
+//                 opacity: 0.5;
+//                 span{
+//                     display: inline;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 .showcase{
     width: 100%;
@@ -197,6 +214,25 @@
                     font-size: 20px;
                 }
             }
+            .subscribe{
+                color: #c4302b;
+                background-color: white;
+                transition: all ease-in-out 0.3s;
+                border: none;
+                :hover{
+                    color: white;
+                    background-color: #c4302b;
+                    border: white 1px solid;
+                }
+                a{
+                    text-decoration: none;
+                    color: #c4302b;
+                    :hover{
+                        text-decoration: none;
+                        color: white;
+                    }
+                }
+            }
         }
         .github{
             display: flex;
@@ -214,22 +250,49 @@
                 width: 180px;
                 height: 180px;
             }
-            .project{
-                margin-bottom: 10%;
-                padding: 10%;
-                border-radius: 10%;
-                -webkit-box-shadow: 13px 9px 24px 2px rgba(36,36,36,1);
-                -moz-box-shadow: 13px 9px 24px 2px rgba(36,36,36,1);
-                box-shadow: 13px 9px 24px 2px rgba(36,36,36,1);
-                img{
-                    width: 35vw;
-                    height: auto;
-                    padding: 0;
+            a{
+                color: black;
+                text-decoration: none;
+                .project{
+                    margin-bottom: 10%;
+                    padding: 10%;
+                    border-radius: 10%;
+                    -webkit-box-shadow: 13px 9px 24px 2px rgba(36,36,36,1);
+                    -moz-box-shadow: 13px 9px 24px 2px rgba(36,36,36,1);
+                    box-shadow: 13px 9px 24px 2px rgba(36,36,36,1);
+                    img{
+                        width: 100%;
+                        height: auto;
+                        padding: 0;
+                    }
+                    .description{
+                        padding: 2rem;
+                        flex-grow: 1;
+                        font-size: 20px;
+                    }
                 }
-                .description{
-                    padding: 2rem;
-                    flex-grow: 1;
-                    font-size: 20px;
+                :hover{
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+            .follow{
+                color: white;
+                background-color: black;
+                transition: all ease-in-out 0.3s;
+                border: none;
+                :hover{
+                    color: black;
+                    background-color: white;
+                    border: black 1px solid;
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                    :hover{
+                        text-decoration: none;
+                        color: black;
+                    }
                 }
             }
         }

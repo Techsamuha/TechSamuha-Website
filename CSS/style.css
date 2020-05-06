@@ -41,8 +41,7 @@
 }
 .intro .logo img {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  height: auto;
 }
 .intro h1 {
   font-size: 6rem;
@@ -55,108 +54,19 @@
   color: #a0ddff;
 }
 
-.menu {
-  width: 100%;
-  height: 100vh;
-  color: #080708;
-}
-.menu .main-menu {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: wrap row;
-}
-.menu .main-menu .tutorials {
-  flex-grow: 1;
-  width: 60%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../IMG/tutorial.jpg") no-repeat;
-  background-size: cover;
-  backdrop-filter: brightness(20%);
-  transition: ease-in-out 0.3s;
-}
-.menu .main-menu .tutorials span {
-  display: none;
-  font-family: "Audiowide", cursive;
-  font-size: 4rem;
-}
-.menu .main-menu .tutorials:hover {
-  opacity: 0.5;
-}
-.menu .main-menu .tutorials:hover span {
-  display: inline;
-}
-.menu .main-menu .projects {
-  flex-grow: 1;
-  width: 40%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../IMG/project.jpg") no-repeat;
-  background-size: cover;
-  backdrop-filter: brightness(20%);
-  transition: ease-in-out 0.3s;
-}
-.menu .main-menu .projects span {
-  display: none;
-  font-family: "Audiowide", cursive;
-  font-size: 4rem;
-}
-.menu .main-menu .projects:hover {
-  opacity: 0.5;
-}
-.menu .main-menu .projects:hover span {
-  display: inline;
-}
-.menu .main-menu .team {
-  flex-grow: 1;
-  width: 45%;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.newsletter {
+  height: 80vh;
+  padding: 10%;
   background: url("../IMG/team.jpg") no-repeat;
-  backdrop-filter: brightness(20%);
   background-size: cover;
-  transition: ease-in-out 0.3s;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  color: white;
+  color-interpolation-filters: sRGB;
 }
-.menu .main-menu .team span {
-  display: none;
-  font-family: "Audiowide", cursive;
-  font-size: 4rem;
-}
-.menu .main-menu .team:hover {
-  opacity: 0.5;
-}
-.menu .main-menu .team:hover span {
-  display: inline;
-}
-.menu .main-menu .contact {
-  flex-grow: 1;
-  height: 50vh;
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: url("../IMG/contact.jpg") no-repeat;
-  background-size: cover;
-  backdrop-filter: brightness(20%);
-  transition: ease-in-out 0.3s;
-}
-.menu .main-menu .contact span {
-  display: none;
-  font-family: "Audiowide", cursive;
-  font-size: 4rem;
-}
-.menu .main-menu .contact:hover {
-  opacity: 0.5;
-}
-.menu .main-menu .contact:hover span {
-  display: inline;
+.newsletter .content-news h2 {
+  font-size: 72px;
+  color: #3772ff;
 }
 
 .showcase {
@@ -201,6 +111,25 @@
   flex-grow: 1;
   font-size: 20px;
 }
+.showcase .showcase-wrapper .youtube .subscribe {
+  color: #c4302b;
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+.showcase .showcase-wrapper .youtube .subscribe :hover {
+  color: white;
+  background-color: #c4302b;
+  border: white 1px solid;
+}
+.showcase .showcase-wrapper .youtube .subscribe a {
+  text-decoration: none;
+  color: #c4302b;
+}
+.showcase .showcase-wrapper .youtube .subscribe a :hover {
+  text-decoration: none;
+  color: white;
+}
 .showcase .showcase-wrapper .github {
   display: flex;
   height: auto;
@@ -218,7 +147,11 @@
   width: 180px;
   height: 180px;
 }
-.showcase .showcase-wrapper .github .project {
+.showcase .showcase-wrapper .github a {
+  color: black;
+  text-decoration: none;
+}
+.showcase .showcase-wrapper .github a .project {
   margin-bottom: 10%;
   padding: 10%;
   border-radius: 10%;
@@ -226,15 +159,38 @@
   -moz-box-shadow: 13px 9px 24px 2px #242424;
   box-shadow: 13px 9px 24px 2px #242424;
 }
-.showcase .showcase-wrapper .github .project img {
-  width: 35vw;
+.showcase .showcase-wrapper .github a .project img {
+  width: 100%;
   height: auto;
   padding: 0;
 }
-.showcase .showcase-wrapper .github .project .description {
+.showcase .showcase-wrapper .github a .project .description {
   padding: 2rem;
   flex-grow: 1;
   font-size: 20px;
+}
+.showcase .showcase-wrapper .github a :hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+.showcase .showcase-wrapper .github .follow {
+  color: white;
+  background-color: black;
+  transition: all ease-in-out 0.3s;
+  border: none;
+}
+.showcase .showcase-wrapper .github .follow :hover {
+  color: black;
+  background-color: white;
+  border: black 1px solid;
+}
+.showcase .showcase-wrapper .github .follow a {
+  text-decoration: none;
+  color: white;
+}
+.showcase .showcase-wrapper .github .follow a :hover {
+  text-decoration: none;
+  color: black;
 }
 
 footer {
