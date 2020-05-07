@@ -32,8 +32,8 @@
     padding: 5%;
     width: auto;
     .logo{
-        width: 100px;
-        height: 100px;
+        // width: 100px;
+        // height: 100px;
         position: relative;
         img{
             width: 100%;
@@ -195,8 +195,8 @@
             background-color:  #c4302b;
             img{
                 padding: 0;
-                width: 300px;
-                height: 200px;
+                // width: 300px;
+                // height: 200px;
             }
             .videos{
                 margin-bottom: 10%;
@@ -211,7 +211,7 @@
                 .description{
                     padding: 2rem;
                     flex-grow: 1;
-                    font-size: 20px;
+                    // font-size: 20px;
                 }
             }
             .subscribe{
@@ -247,13 +247,14 @@
             background-color:  white;
             img{
                 padding: 10%;
-                width: 180px;
-                height: 180px;
+                // width: 180px;
+                // height: 180px;
             }
             a{
                 color: black;
                 text-decoration: none;
                 .project{
+                    margin-top: 5%;
                     margin-bottom: 10%;
                     padding: 10%;
                     border-radius: 10%;
@@ -268,7 +269,7 @@
                     .description{
                         padding: 2rem;
                         flex-grow: 1;
-                        font-size: 20px;
+                        // font-size: 20px;
                     }
                 }
                 :hover{

@@ -1,5 +1,97 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+@media all and (max-width: 399px) {
+  .intro .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .showcase .showcase-wrapper .youtube img {
+    width: 80px;
+    height: 60px;
+  }
+  .showcase .showcase-wrapper .youtube .videos iframe {
+    flex-grow: 1;
+    width: 50vh;
+    height: 25vh;
+  }
+  .showcase .showcase-wrapper .github img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media all and (min-width: 580px) and (max-width: 768px) {
+  .intro .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  .showcase .showcase-wrapper .youtube img {
+    width: 300px;
+    height: 200px;
+  }
+  .showcase .showcase-wrapper .youtube .videos iframe {
+    flex-grow: 1;
+    width: 50vh;
+    height: 25vh;
+  }
+  .showcase .showcase-wrapper .github img {
+    width: 200px;
+    height: auto;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1080px) {
+  .intro .logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .showcase .showcase-wrapper .youtube img {
+    width: 400px;
+    height: auto;
+  }
+  .showcase .showcase-wrapper .youtube .videos iframe {
+    flex-grow: 1;
+    width: 40vh;
+    height: 30vh;
+  }
+  .showcase .showcase-wrapper .youtube .videos .description {
+    font-size: 16px;
+  }
+  .showcase .showcase-wrapper .github img {
+    width: 200px;
+    height: auto;
+  }
+  .showcase .showcase-wrapper .github .project .description {
+    font-size: 16px;
+  }
+}
+@media all and (min-width: 1081px) {
+  .intro .logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .showcase .showcase-wrapper .youtube img {
+    width: 400px;
+    height: auto;
+  }
+  .showcase .showcase-wrapper .youtube .videos iframe {
+    flex-grow: 1;
+    width: 70vh;
+    height: 45vh;
+  }
+  .showcase .showcase-wrapper .youtube .videos .description {
+    font-size: 20px;
+  }
+  .showcase .showcase-wrapper .github img {
+    width: 350px;
+    height: auto;
+  }
+  .showcase .showcase-wrapper .github .project .description {
+    font-size: 20px;
+  }
+}
 .landing-page {
   width: 100%;
   height: 100vh;
@@ -35,8 +127,6 @@
   width: auto;
 }
 .intro .logo {
-  width: 100px;
-  height: 100px;
   position: relative;
 }
 .intro .logo img {
@@ -92,8 +182,6 @@
 }
 .showcase .showcase-wrapper .youtube img {
   padding: 0;
-  width: 300px;
-  height: 200px;
 }
 .showcase .showcase-wrapper .youtube .videos {
   margin-bottom: 10%;
@@ -109,7 +197,6 @@
 .showcase .showcase-wrapper .youtube .videos .description {
   padding: 2rem;
   flex-grow: 1;
-  font-size: 20px;
 }
 .showcase .showcase-wrapper .youtube .subscribe {
   color: #c4302b;
@@ -144,14 +231,13 @@
 }
 .showcase .showcase-wrapper .github img {
   padding: 10%;
-  width: 180px;
-  height: 180px;
 }
 .showcase .showcase-wrapper .github a {
   color: black;
   text-decoration: none;
 }
 .showcase .showcase-wrapper .github a .project {
+  margin-top: 5%;
   margin-bottom: 10%;
   padding: 10%;
   border-radius: 10%;
@@ -167,7 +253,6 @@
 .showcase .showcase-wrapper .github a .project .description {
   padding: 2rem;
   flex-grow: 1;
-  font-size: 20px;
 }
 .showcase .showcase-wrapper .github a :hover {
   text-decoration: none;
@@ -223,7 +308,7 @@ footer .container a .row {
   margin-bottom: 30px;
 }
 footer .container a .row span {
-  font-size: 24px;
+  font-size: 1rem;
 }
 footer .container a .row .round-profile {
   border-radius: 50%;

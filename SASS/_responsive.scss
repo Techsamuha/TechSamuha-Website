@@ -1,0 +1,146 @@
+@media all and (max-width:399px){
+    .intro{
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .showcase{
+        .showcase-wrapper{
+            .youtube{
+                img{
+                    width: 80px;
+                    height: 60px;
+                }
+                .videos{
+                    iframe{
+                        flex-grow: 1;
+                        width: 50vh;
+                        height: 25vh;
+                    }
+                    
+                }
+            }
+            .github{
+                img{
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:580px) and (max-width:768px){
+    .intro{
+        .logo{
+            width: 50px;
+            height: 50px;
+        }
+    }
+    .showcase{
+        .showcase-wrapper{
+            .youtube{
+                img{
+                    width: 300px;
+                    height: 200px;
+                }
+                .videos{
+                    iframe{
+                        flex-grow: 1;
+                        width: 50vh;
+                        height: 25vh;
+                    }
+                    
+                }
+            }
+            .github{
+                img{
+                    width: 200px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:769px) and (max-width:1080px){
+    .intro{
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .showcase{
+        .showcase-wrapper{
+            .youtube{
+                img{
+                    width: 400px;
+                    height: auto;
+                }
+                .videos{
+                    iframe{
+                        flex-grow: 1;
+                        width: 40vh;
+                        height:30vh;
+                    }
+                    .description{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .github{
+                img{
+                    width: 200px;
+                    height: auto;
+                }
+                .project{
+                    img{
+
+                    }
+                    .description{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (min-width:1081px){
+    .intro{
+        .logo{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    .showcase{
+        .showcase-wrapper{
+            .youtube{
+                img{
+                    width: 400px;
+                    height: auto;
+                }
+                .videos{
+                    iframe{
+                        flex-grow: 1;
+                        width: 70vh;
+                        height:45vh;
+                    }
+                    .description{
+                        font-size: 20px;
+                    }
+                    
+                }
+            }
+            .github{
+                img{
+                    width: 350px;
+                    height: auto;
+                }
+                .project{
+                    .description{
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
